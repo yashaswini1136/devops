@@ -13,7 +13,7 @@ public class AddTwoNum {
         int sum = num1 + num2;  // calculate sum
 
         System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
-
+       System.out.println("====================\n");
         sc.close(); // close scanner
     }
 }

@@ -1,16 +1,25 @@
-import java.util.Scanner; // Import Scanner class
+import java.util.Scanner;
 
 public class StringExample {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Create Scanner object
-        
-        System.out.print("Enter a string:");
-        String input = scanner.nextLine(); // Read input from user
-        
-        System.out.println("You entered: hello world" + input); // Display the entered string
-        
-        scanner.close(); // Close the scanner
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        if (scanner.hasNextLine()) {
+            String input = scanner.nextLine();
+            System.out.println("You entered: " + input);
+        } else {
+            System.out.println("No input provided. Using default string.");
+            String input = "Default String";
+            System.out.println("You entered: " + input);
+        }
+
+        scanner.close();
     }
 }
+
+
+
+
 
 

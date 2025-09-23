@@ -4,7 +4,7 @@ public class StringExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Create Scanner object
         
-        System.out.print("Enter a string: hello world");
+        System.out.print("Enter a string:");
         String input = scanner.nextLine(); // Read input from user
         
         System.out.println("You entered: hello world" + input); // Display the entered string
@@ -12,4 +12,5 @@ public class StringExample {
         scanner.close(); // Close the scanner
     }
 }
+
 
